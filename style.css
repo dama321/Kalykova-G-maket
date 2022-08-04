@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 /* header star */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  display: none;
+}
 .container {
   /* min-width: 1400px; */
   margin: 30px 100px;
@@ -81,7 +88,6 @@
   font-family: "Inter";
   margin-top: 24px;
   width: 319px;
-  /* height: 19px;  */
   padding: 18px 99px 18px 24px;
   font-weight: 500;
   font-size: 16px;
@@ -127,7 +133,6 @@
   font-weight: 700;
   font-style: bold;
 }
-
 .container_logo {
   display: flex;
   justify-content: space-between;
@@ -141,7 +146,6 @@
   margin: 100px auto;
   padding: 56px 0;
 }
-
 .container__Timeline {
   width: 1100px;
   display: flex;
@@ -149,21 +153,18 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .container_right_Survey {
   background-color: #f6f3fc;
   align-items: flex-end;
 }
 h3 {
   text-align: center;
-  /* margin-top: +100px; */
   margin-bottom: 29px;
   color: #35414b;
   font-family: "Inter";
   font-style: normal;
   font-size: 16px;
 }
-
 .container_right_Resolve {
   display: inline-block;
 }
@@ -271,7 +272,7 @@ h2 {
   height: 405px;
   left: 668px;
   top: 2921px;
-  background: url(Group 26.png);
+  /* background: url(./media/Hous\ worked.png); */
 }
 /* ========== House worked end======== */
 
@@ -356,3 +357,86 @@ ul {
   flex-direction: column;
 }
 /* Footer end */
+
+/* TODO АДАПТИВКА */
+
+@media all and (max-width: 1000px) {
+  .overview {
+    width: 80%;
+  }
+}
+
+/* header start */
+@media all and (max-width: 920px) {
+  .navbar,
+  .btns {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+/* manage */
+@media all and (max-width: 900px) {
+  h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+@media all and (max-width: 800px) {
+  .menu {
+    margin-left: 50px;
+  }
+}
+
+/* header end  */
+
+/* section-1 start */
+
+@media all and (max-width: 500px) {
+  .h1 {
+    margin-left: 50px;
+    font-size: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .paragraph-1 {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 300px) {
+  #email {
+    width: 100px;
+  }
+  #try {
+    width: 100px;
+  }
+}
+/* section-1 END */
+
+/* Best teams start */
+@media all and (max-wedth: 500px) {
+  .trusred_by {
+    width: 200px;
+  }
+}
+@media all and (max-width: 700px) {
+  .container_logo {
+    width: 500px;
+  }
+}
+/* Best teams end */
+/* Timeline start */
+@media all and (max-width: 700px) {
+  .container__Timeline {
+    width: 350px;
+    margin: 25px auto;
+  }
+}
+@media all and (max-width: 350px) {
+  .container_right_Resolve {
+    font-size: 12px;
+  }
+}
+
+/* Timeline end */
